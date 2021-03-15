@@ -6,5 +6,4 @@ public class CreditCalculatorService {
                         / (Math.pow((1 + rateMont), period) - 1)));
         return payment;
     }
-
 }
