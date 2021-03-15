@@ -8,13 +8,16 @@ public class Main {
         CreditCalculatorService service = new CreditCalculatorService();
         int sum = 1_000_000;
         double rateYear = 9.99;
-        double payment1year= service.calculate(sum, 12, rateYear);
+        int period_1 = 12;
+        int period_2 = 24;
+        int period_3 = 36;
+        double payment1year= service.calculate(sum, period_1, rateYear);
         System.out.printf("Ежемесячный платёж срок 12 месяцев: %.0f \n", payment1year);
 
-        double payment2year= service.calculate(sum, 24, rateYear);
+        double payment2year= service.calculate(sum, period_2, rateYear);
         System.out.printf("Ежемесячный платёж срок 24 месяцев: %.0f \n", payment2year);
 
-        double payment3year= service.calculate(sum, 36, rateYear);
+        double payment3year= service.calculate(sum, period_3, rateYear);
         System.out.printf("Ежемесячный платёж срок 36 месяцев: %.0f", payment3year);
     }
 }
