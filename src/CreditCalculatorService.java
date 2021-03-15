@@ -1,9 +1,9 @@
 public class CreditCalculatorService {
     public double calculate (int sum,int period,double rateYear){
-        double rateMont = rateYear / 100 / 12;
+        double rateMonth = rateYear / 100 / 12;
         double payment;
-        payment= (sum * ((rateMont * (Math.pow((1 + rateMont), period)))
-                        / (Math.pow((1 + rateMont), period) - 1)));
+        payment= (sum * ((rateMonth * (Math.pow((1 + rateMonth), period)))
+                        / (Math.pow((1 + rateMonth), period) - 1)));
         return payment;
     }
 }
