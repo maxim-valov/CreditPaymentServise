@@ -32,3 +32,5 @@ public class CreditCalculatorService {
     }
 }
 ```
+Пример расчёта ежемесячного платежа:
+![creditcalculate](https://user-images.githubusercontent.com/74412798/111120796-93e0f600-854a-11eb-910a-34f4177c614c.PNG)
